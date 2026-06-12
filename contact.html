@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Tita-Harbor.co26</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0A1628;--navy2:#0F2040;--blue2:#2563EB;--cyan:#06B6D4;--gold2:#FBBF24;--off:#F8FAFC;--gray:#64748B;--light:#E2E8F0;--dark:#1E293B}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:#fff;font-size:15px;line-height:1.65;min-height:100vh}
+nav{background:rgba(10,22,40,.96);backdrop-filter:blur(12px);position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 2rem;height:68px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+.logo-mark{width:38px;height:38px;background:linear-gradient(135deg,#2563EB,#06B6D4);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:16px;color:#fff}
+.logo-text{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:#fff}
+.logo-text span{color:#FBBF24}
+.nav-links{display:flex;gap:.25rem;list-style:none}
+.nav-links a{text-decoration:none;color:rgba(255,255,255,.7);font-size:13.5px;font-weight:500;padding:6px 14px;border-radius:6px;transition:all .2s}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav-cta{background:#2563EB;color:#fff;padding:9px 22px;border-radius:8px;font-size:13.5px;font-weight:600;text-decoration:none}
+
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 60% 0%,rgba(37,99,235,.18),transparent 70%)}
+.page{position:relative;max-width:1200px;margin:0 auto;padding:4rem 2rem 6rem}
+.eyebrow{display:inline-block;font-size:11px;font-weight:700;color:var(--cyan);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.75rem;padding:3px 10px;background:rgba(6,182,212,.15);border-radius:4px}
+.page-title{font-family:'Syne',sans-serif;font-size:2.6rem;font-weight:800;letter-spacing:-.02em;margin-bottom:.75rem}
+.page-sub{color:rgba(255,255,255,.6);font-size:16px;max-width:600px;margin-bottom:3rem}
+
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;position:relative}
+.contact-form{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:2.5rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fg{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1.1rem}
+.fg label{font-size:12.5px;font-weight:500;color:rgba(255,255,255,.7)}
+.fg input,.fg select,.fg textarea{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:11px 14px;font-size:14px;color:#fff;font-family:'Inter',sans-serif;outline:none;transition:border-color .2s}
+.fg input::placeholder,.fg textarea::placeholder{color:rgba(255,255,255,.3)}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--blue2)}
+.fg select{appearance:none;cursor:pointer}
+.fg select option{background:var(--navy);color:#fff}
+.fg textarea{resize:vertical;min-height:120px}
+.fg input[required]:invalid,.fg select[required]:invalid{box-shadow:none}
+.btn-submit{width:100%;background:var(--blue2);color:#fff;padding:14px;border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;border:none;font-family:'Inter',sans-serif;transition:background .2s}
+.btn-submit:hover{background:#1D4ED8}
+.form-note{font-size:12px;color:rgba(255,255,255,.4);margin-top:1rem;text-align:center;line-height:1.6}
+
+.info-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:2rem;margin-bottom:1.5rem}
+.info-card h3{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:1.2rem}
+.ci-items{display:flex;flex-direction:column;gap:1.1rem}
+.ci-item{display:flex;align-items:flex-start;gap:1rem}
+.ci-icon{width:40px;height:40px;background:rgba(255,255,255,.08);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.ci-label{font-size:12px;color:rgba(255,255,255,.4);font-weight:500;text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:2px}
+.ci-val{font-size:14px;color:rgba(255,255,255,.85);font-weight:500}
+.social-row{display:flex;gap:.75rem;margin-top:.5rem}
+.social-btn{width:40px;height:40px;background:rgba(255,255,255,.08);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;cursor:pointer;transition:all .2s;text-decoration:none;color:#fff}
+.social-btn:hover{background:var(--blue2)}
+.fchip{display:inline-flex;align-items:center;gap:.4rem;font-size:12px;background:rgba(255,255,255,.06);padding:5px 12px;border-radius:20px;color:rgba(255,255,255,.7);margin:3px}
+
+footer{background:#050E1A;padding:2rem 0;text-align:center;font-size:12px;color:rgba(255,255,255,.3);border-top:1px solid rgba(255,255,255,.06)}
+
+#thanks{display:none;text-align:center;padding:3rem 1rem}
+#thanks .check{font-size:3rem;margin-bottom:1rem}
+#thanks h3{font-family:'Syne',sans-serif;font-size:1.4rem;margin-bottom:.5rem}
+#thanks p{color:rgba(255,255,255,.6);font-size:14px}
+
+@media(max-width:900px){
+  .grid{grid-template-columns:1fr;gap:2rem}
+  .form-row{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .page-title{font-size:2rem}
+}
+</style>
+</head>
+<body>
+<div class="hero-bg"></div>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><div class="logo-mark">TH</div><div class="logo-text">Tita-Harbor<span>.co26</span></div></a>
+    <ul class="nav-links">
+      <li><a href="index.html#products">Products</a></li>
+      <li><a href="index.html#markets">Markets</a></li>
+      <li><a href="index.html#business">Business</a></li>
+      <li><a href="index.html#supply">Supply Chain</a></li>
+      <li><a href="index.html#roadmap">Roadmap</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Contact Us</a>
+  </div>
+</nav>
+
+<div class="page">
+  <span class="eyebrow">Get in Touch</span>
+  <h1 class="page-title">Let's start a partnership</h1>
+  <p class="page-sub">Whether you're a distributor, importer, or platform seller looking for reliable products and supply chain support — tell us what you need and we'll respond within 24 hours.</p>
+
+  <div class="grid">
+    <div>
+      <!-- ============================================================ -->
+      <!-- 重要：把下面这一行的 YOUR_FORM_ID 替换成 Formspree 给你的表单ID -->
+      <!-- 例如: https://formspree.io/f/abcd1234                          -->
+      <!-- ============================================================ -->
+      <form id="inquiry-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-row">
+          <div class="fg"><label>Your Name *</label><input type="text" name="name" placeholder="Full name" required></div>
+          <div class="fg"><label>Company *</label><input type="text" name="company" placeholder="Company name" required></div>
+        </div>
+        <div class="fg"><label>Email *</label><input type="email" name="email" placeholder="your@email.com" required></div>
+        <div class="form-row">
+          <div class="fg">
+            <label>Inquiry Type *</label>
+            <select name="inquiry_type" required>
+              <option value="">Select inquiry type...</option>
+              <option>Industrial / Electrical Equipment</option>
+              <option>Smart Home Products</option>
+              <option>Cold Chain Seafood Supply</option>
+              <option>Become a Distributor</option>
+              <option>Platform Store Partnership</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="fg"><label>Country / Market</label><input type="text" name="country" placeholder="e.g. Thailand, Vietnam, India..."></div>
+        </div>
+        <div class="fg"><label>Message *</label><textarea name="message" placeholder="Tell us about your needs, quantities, or questions..." required></textarea></div>
+        <button type="submit" class="btn-submit">Send Inquiry →</button>
+        <p class="form-note">By submitting, you agree to be contacted by our team regarding your inquiry. We typically respond within 24 hours.</p>
+      </form>
+
+      <div id="thanks">
+        <div class="check">✅</div>
+        <h3>Thank you!</h3>
+        <p>Your inquiry has been sent successfully. Our team will contact you within 24 hours.</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="info-card">
+        <h3>Contact Information</h3>
+        <div class="ci-items">
+          <div class="ci-item"><div class="ci-icon">🌐</div><div><span class="ci-label">Website</span><span class="ci-val">xynong.ccwu.cc</span></div></div>
+          <div class="ci-item"><div class="ci-icon">📧</div><div><span class="ci-label">Email</span><span class="ci-val">contact@xynong.ccwu.cc</span></div></div>
+          <div class="ci-item"><div class="ci-icon">📦</div><div><span class="ci-label">Business</span><span class="ci-val">B2B Wholesale · B2C Retail · Cold Chain</span></div></div>
+          <div class="ci-item"><div class="ci-icon">🌏</div><div><span class="ci-label">Markets</span><span class="ci-val">Southeast Asia &amp; South Asia</span></div></div>
+        </div>
+        <div class="social-row">
+          <a href="#" class="social-btn" title="TikTok">🎵</a>
+          <a href="#" class="social-btn" title="Facebook">📘</a>
+          <a href="#" class="social-btn" title="WhatsApp">💬</a>
+          <a href="#" class="social-btn" title="WeChat">💚</a>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h3>We typically reply about</h3>
+        <div>
+          <span class="fchip">⚡ Equipment specs &amp; pricing</span>
+          <span class="fchip">📦 MOQ &amp; bulk orders</span>
+          <span class="fchip">🚚 Shipping &amp; lead time</span>
+          <span class="fchip">🤝 Distributor terms</span>
+          <span class="fchip">🐟 Cold chain capacity</span>
+          <span class="fchip">🎵 Platform store partnership</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>© 2025 Tita-Harbor.co26 · xynong.ccwu.cc · All rights reserved.</footer>
+
+<script>
+const form=document.getElementById('inquiry-form');
+form.addEventListener('submit',function(e){
+  // Formspree 配置好后，表单会正常提交并跳转。
+  // 这里做一个简单的本地提示（如果尚未配置 Formspree，仅做演示）
+  if(form.action.includes('YOUR_FORM_ID')){
+    e.preventDefault();
+    alert('提示：表单尚未连接 Formspree。\n请先按照《网站建设全套技术方案》第四步完成 Formspree 注册，并把表单地址告诉网站管理员替换 YOUR_FORM_ID。');
+  }
+});
+</script>
+</body>
+</html>
