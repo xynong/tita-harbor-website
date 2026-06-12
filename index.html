@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tita-Harbor.co26 | Smart Technology · Reliable Supply · Better Living</title>
+<meta name="description" content="Tita-Harbor.co26 - Cross-border e-commerce & supply chain for Southeast and South Asia.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0A1628;--navy2:#0F2040;--blue:#1A4FBF;--blue2:#2563EB;--cyan:#06B6D4;--gold:#F59E0B;--gold2:#FBBF24;--white:#FFFFFF;--off:#F8FAFC;--gray:#64748B;--light:#E2E8F0;--dark:#1E293B;--r:12px;--r2:20px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--off);color:var(--dark);font-size:15px;line-height:1.65;overflow-x:hidden}
+nav{background:rgba(10,22,40,.96);backdrop-filter:blur(12px);position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 2rem;height:68px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+.logo-mark{width:38px;height:38px;background:linear-gradient(135deg,#2563EB,#06B6D4);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:16px;color:#fff}
+.logo-text{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:#fff;letter-spacing:.02em}
+.logo-text span{color:#FBBF24}
+.nav-links{display:flex;gap:.25rem;list-style:none}
+.nav-links a{text-decoration:none;color:rgba(255,255,255,.7);font-size:13.5px;font-weight:500;padding:6px 14px;border-radius:6px;transition:all .2s}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav-cta{background:#2563EB;color:#fff;padding:9px 22px;border-radius:8px;font-size:13.5px;font-weight:600;text-decoration:none;transition:all .2s}
+.nav-cta:hover{background:#1D4ED8}
+.hero{background:var(--navy);min-height:100vh;display:grid;align-items:center;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 60% 40%,rgba(37,99,235,.18),transparent 70%),radial-gradient(ellipse 40% 40% at 20% 80%,rgba(6,182,212,.1),transparent 60%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:60px 60px;opacity:.5}
+.hero-inner{max-width:1200px;margin:0 auto;padding:6rem 2rem;display:grid;grid-template-columns:1fr 460px;gap:5rem;align-items:center;position:relative;z-index:1}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:.5rem;background:rgba(37,99,235,.15);border:1px solid rgba(37,99,235,.3);border-radius:20px;padding:5px 14px;margin-bottom:1.5rem}
+.hero-eyebrow span{font-size:11px;font-weight:600;color:#06B6D4;letter-spacing:.1em;text-transform:uppercase}
+.hero-dot{width:6px;height:6px;background:#06B6D4;border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-family:'Syne',sans-serif;font-size:3.4rem;font-weight:800;color:#fff;line-height:1.1;letter-spacing:-.03em;margin-bottom:1.5rem}
+.hero h1 em{font-style:normal;color:#FBBF24}
+.hero-sub{color:rgba(255,255,255,.65);font-size:16px;line-height:1.8;margin-bottom:2rem;max-width:520px}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem}
+.btn-primary{background:#2563EB;color:#fff;padding:14px 28px;border-radius:10px;font-size:14px;font-weight:600;text-decoration:none;transition:all .2s;display:inline-block}
+.btn-primary:hover{background:#1D4ED8}
+.btn-secondary{background:transparent;color:rgba(255,255,255,.85);padding:14px 28px;border-radius:10px;font-size:14px;font-weight:500;text-decoration:none;transition:all .2s;display:inline-block;border:1px solid rgba(255,255,255,.2)}
+.btn-secondary:hover{border-color:rgba(255,255,255,.5);color:#fff}
+.hero-stats{display:flex;gap:2.5rem}
+.hstat strong{display:block;font-family:'Syne',sans-serif;font-size:2rem;font-weight:700;color:#fff;line-height:1}
+.hstat span{font-size:12px;color:rgba(255,255,255,.5);margin-top:3px;display:block}
+.hero-visual{display:flex;flex-direction:column;gap:14px}
+.hcard{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:1.2rem 1.4rem;backdrop-filter:blur(8px);transition:all .3s;cursor:pointer}
+.hcard:hover{background:rgba(255,255,255,.08);transform:translateX(-4px)}
+.hcard-top{display:flex;align-items:center;gap:.75rem;margin-bottom:.5rem}
+.hcard-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.ic-blue{background:rgba(37,99,235,.25)}
+.ic-cyan{background:rgba(6,182,212,.2)}
+.ic-gold{background:rgba(245,158,11,.2)}
+.hcard-title{font-size:14px;font-weight:600;color:#fff}
+.hcard-desc{font-size:12px;color:rgba(255,255,255,.5);line-height:1.6}
+.ticker{background:#0F2040;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);padding:.75rem 0;overflow:hidden}
+.ticker-inner{display:flex;gap:3rem;white-space:nowrap;animation:tick 30s linear infinite}
+@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.tick-item{display:flex;align-items:center;gap:.5rem;font-size:12.5px;color:rgba(255,255,255,.5);font-weight:500;flex-shrink:0}
+section{padding:5rem 0}
+.container{max-width:1200px;margin:0 auto;padding:0 2rem}
+.eyebrow{display:inline-block;font-size:11px;font-weight:700;color:#2563EB;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.75rem;padding:3px 10px;background:rgba(37,99,235,.08);border-radius:4px}
+.eyebrow-light{background:rgba(6,182,212,.15);color:#06B6D4}
+.sec-title{font-family:'Syne',sans-serif;font-size:2.2rem;font-weight:800;color:var(--navy);line-height:1.2;letter-spacing:-.02em;margin-bottom:.75rem}
+.sec-title-light{color:#fff}
+.sec-sub{color:var(--gray);font-size:15px;max-width:580px}
+.sec-sub-light{color:rgba(255,255,255,.55)}
+.sec-head{margin-bottom:3rem}
+.products-bg{background:#fff}
+.tabs{display:flex;gap:.5rem;margin-bottom:2.5rem;flex-wrap:wrap}
+.tab{padding:8px 20px;border-radius:8px;font-size:13.5px;font-weight:500;cursor:pointer;border:1.5px solid #E2E8F0;background:#fff;color:#64748B;transition:all .2s;font-family:'Inter',sans-serif}
+.tab.active,.tab:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.pcard{background:#F8FAFC;border-radius:20px;border:1px solid #E2E8F0;overflow:hidden;transition:all .25s;cursor:pointer}
+.pcard:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.1);border-color:rgba(37,99,235,.2)}
+.pcard-img{height:160px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative}
+.img-blue{background:linear-gradient(135deg,#EFF6FF,#DBEAFE)}
+.img-cyan{background:linear-gradient(135deg,#ECFEFF,#CFFAFE)}
+.img-gold{background:linear-gradient(135deg,#FFFBEB,#FEF3C7)}
+.img-green{background:linear-gradient(135deg,#F0FDF4,#DCFCE7)}
+.pcard-badge{position:absolute;top:10px;right:10px;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;letter-spacing:.04em}
+.b-b2b{background:#DBEAFE;color:#1E40AF}
+.b-b2c{background:#D1FAE5;color:#065F46}
+.b-new{background:#FEF3C7;color:#92400E}
+.pcard-body{padding:1.2rem}
+.pcard-cat{font-size:10px;font-weight:700;color:#2563EB;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.3rem}
+.pcard-name{font-size:14.5px;font-weight:600;color:var(--navy);margin-bottom:.4rem;line-height:1.4}
+.pcard-desc{font-size:12.5px;color:#64748B;line-height:1.6;margin-bottom:.8rem}
+.pcard-tags{display:flex;flex-wrap:wrap;gap:.3rem}
+.ptag{font-size:10px;background:#E2E8F0;color:#64748B;padding:2px 8px;border-radius:4px;font-weight:500}
+.market-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.mcard{border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:1.8rem;transition:all .25s;cursor:pointer;background:rgba(255,255,255,.03)}
+.mcard:hover{background:rgba(255,255,255,.06);transform:translateY(-3px)}
+.mcard-flag{font-size:2.2rem;margin-bottom:.8rem}
+.mcard-name{font-size:16px;font-weight:700;color:#fff;margin-bottom:.3rem;font-family:'Syne',sans-serif}
+.mcard-type{font-size:11px;color:#06B6D4;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem}
+.mcard-items{display:flex;flex-wrap:wrap;gap:.4rem}
+.mitem{font-size:11px;background:rgba(255,255,255,.08);color:rgba(255,255,255,.65);padding:2px 9px;border-radius:4px}
+.biz-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.biz-card{border-radius:20px;padding:2.2rem;border:1px solid #E2E8F0;background:#fff;position:relative;overflow:hidden}
+.biz-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:20px 20px 0 0}
+.biz-b2b::before{background:linear-gradient(90deg,#2563EB,#06B6D4)}
+.biz-b2c::before{background:linear-gradient(90deg,#F59E0B,#FBBF24)}
+.biz-tag{display:inline-block;font-size:11px;font-weight:700;padding:3px 10px;border-radius:4px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:1rem}
+.bt-b2b{background:#DBEAFE;color:#1E40AF}
+.bt-b2c{background:#FEF3C7;color:#92400E}
+.biz-title{font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;color:var(--navy);margin-bottom:.5rem}
+.biz-desc{color:#64748B;font-size:14px;line-height:1.75;margin-bottom:1.25rem}
+.biz-list{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.biz-list li{display:flex;align-items:center;gap:.6rem;font-size:13.5px;color:var(--dark)}
+.biz-list li::before{content:'';width:7px;height:7px;background:#2563EB;border-radius:50%;flex-shrink:0}
+.biz-b2c .biz-list li::before{background:#F59E0B}
+.biz-platforms{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.plat{padding:5px 12px;border-radius:6px;font-size:12px;font-weight:600;border:1px solid #E2E8F0;color:var(--dark);background:#F8FAFC}
+.supply-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.sstep{text-align:center}
+.sstep-num{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:1.3rem}
+.sstep-title{font-size:14px;font-weight:600;color:#fff;margin-bottom:.4rem}
+.sstep-desc{font-size:12px;color:rgba(255,255,255,.5);line-height:1.6}
+.brand-block{background:linear-gradient(135deg,var(--navy),var(--navy2));border-radius:20px;padding:4rem;text-align:center;position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+.brand-slogan{font-family:'Syne',sans-serif;font-size:2.4rem;font-weight:800;color:#fff;line-height:1.2;margin-bottom:1rem;letter-spacing:-.02em}
+.brand-slogan em{font-style:normal;color:#FBBF24}
+.brand-taglines{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap}
+.btag{font-size:13px;color:rgba(255,255,255,.6)}
+.btag strong{color:rgba(255,255,255,.9);font-weight:500}
+.roadmap{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.rcard{background:#fff;border-radius:20px;padding:2rem;border:1px solid #E2E8F0}
+.rphase{font-size:11px;font-weight:700;color:#2563EB;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.5rem}
+.ryear{font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;color:var(--navy);margin-bottom:1rem}
+.rlist{list-style:none;display:flex;flex-direction:column;gap:.55rem}
+.rlist li{font-size:13.5px;color:var(--dark);display:flex;align-items:baseline;gap:.5rem}
+.rlist li::before{content:'→';color:#2563EB;font-size:12px;flex-shrink:0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.contact-form{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:2.5rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.fg{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1rem}
+.fg label{font-size:12.5px;font-weight:500;color:rgba(255,255,255,.7)}
+.fg input,.fg select,.fg textarea{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:11px 14px;font-size:14px;color:#fff;font-family:'Inter',sans-serif;outline:none;transition:border-color .2s}
+.fg input::placeholder,.fg textarea::placeholder{color:rgba(255,255,255,.3)}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:#2563EB}
+.fg select{appearance:none;cursor:pointer}
+.fg select option{background:#0A1628;color:#fff}
+.fg textarea{resize:vertical;min-height:100px}
+.btn-submit{width:100%;background:#2563EB;color:#fff;padding:13px;border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;border:none;font-family:'Inter',sans-serif;transition:background .2s}
+.btn-submit:hover{background:#1D4ED8}
+.ci-items{display:flex;flex-direction:column;gap:1.2rem}
+.ci-item{display:flex;align-items:flex-start;gap:1rem}
+.ci-icon{width:40px;height:40px;background:rgba(255,255,255,.08);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.ci-label{font-size:12px;color:rgba(255,255,255,.4);font-weight:500;text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:2px}
+.ci-val{font-size:14px;color:rgba(255,255,255,.85);font-weight:500}
+.social-row{display:flex;gap:.75rem;margin-top:2rem}
+.social-btn{width:40px;height:40px;background:rgba(255,255,255,.08);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;cursor:pointer;transition:all .2s;text-decoration:none;color:#fff}
+.social-btn:hover{background:#2563EB}
+footer{background:#050E1A;padding:3rem 0 1.5rem}
+.footer-inner{max-width:1200px;margin:0 auto;padding:0 2rem}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.footer-brand p{font-size:13px;color:rgba(255,255,255,.4);line-height:1.8;max-width:280px;margin:.75rem 0 1rem}
+.footer-domain{font-size:12px;color:rgba(255,255,255,.3);padding:4px 10px;background:rgba(255,255,255,.05);border-radius:4px;display:inline-block}
+.fc h4{font-size:12px;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.1em;margin-bottom:1rem}
+.fc a{display:block;color:rgba(255,255,255,.4);text-decoration:none;font-size:13px;margin-bottom:.5rem;transition:color .2s}
+.fc a:hover{color:rgba(255,255,255,.85)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,.25)}
+.toast{position:fixed;bottom:2rem;right:2rem;background:#2563EB;color:#fff;padding:12px 22px;border-radius:10px;font-size:14px;font-weight:500;transform:translateY(60px);opacity:0;transition:all .3s;z-index:999}
+.toast.show{transform:translateY(0);opacity:1}
+@media(max-width:1024px){.hero-inner{grid-template-columns:1fr;padding:4rem 2rem}.hero-visual{display:none}.product-grid{grid-template-columns:repeat(2,1fr)}.market-grid{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){.hero h1{font-size:2.2rem}.biz-grid{grid-template-columns:1fr}.supply-steps{grid-template-columns:repeat(2,1fr)}.roadmap{grid-template-columns:1fr}.product-grid{grid-template-columns:1fr}.nav-links{display:none}.brand-slogan{font-size:1.7rem}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo"><div class="logo-mark">TH</div><div class="logo-text">Tita-Harbor<span>.co26</span></div></a>
+    <ul class="nav-links">
+      <li><a href="#products">Products</a></li>
+      <li><a href="#markets">Markets</a></li>
+      <li><a href="#business">Business</a></li>
+      <li><a href="#supply">Supply Chain</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Contact Us</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow"><div class="hero-dot"></div><span>Cross-Border E-Commerce &amp; Supply Chain</span></div>
+      <h1>Smart Technology<br><em>Reliable Supply</em><br>Better Living</h1>
+      <p class="hero-sub">Tita-Harbor.co26 connects China's best manufacturers with Southeast &amp; South Asia — industrial equipment, smart home products, and cold-chain logistics.</p>
+      <div class="hero-btns"><a href="#products" class="btn-primary">Explore Products →</a><a href="#contact" class="btn-secondary">Get a Quote</a></div>
+      <div class="hero-stats">
+        <div class="hstat"><strong>9</strong><span>Target Countries</span></div>
+        <div class="hstat"><strong>3</strong><span>Business Lines</span></div>
+        <div class="hstat"><strong>B2B+B2C</strong><span>Dual Model</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hcard"><div class="hcard-top"><div class="hcard-icon ic-blue">⚡</div><div class="hcard-title">Industrial &amp; Electrical Equipment</div></div><div class="hcard-desc">Smart distribution, automation, new energy systems for Southeast Asian industrial growth</div></div>
+      <div class="hcard"><div class="hcard-top"><div class="hcard-icon ic-cyan">🏠</div><div class="hcard-title">Smart Home Products</div></div><div class="hcard-desc">Security, lighting, kitchen appliances — AI-powered smart living solutions</div></div>
+      <div class="hcard"><div class="hcard-top"><div class="hcard-icon ic-gold">🐟</div><div class="hcard-title">Cold Chain Seafood Export</div></div><div class="hcard-desc">B2B cold-chain supply chain services for hotels, importers &amp; restaurant chains</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker"><div class="ticker-inner"><div class="tick-item">⚡ Smart Distribution</div><div class="tick-item">🤖 Industrial Automation</div><div class="tick-item">☀️ Solar &amp; Energy Storage</div><div class="tick-item">🔒 AI Smart Security</div><div class="tick-item">💡 Smart Lighting</div><div class="tick-item">🍤 Cold Chain Seafood</div><div class="tick-item">🌏 Southeast Asia</div><div class="tick-item">📦 B2B Supply Chain</div><div class="tick-item">⚡ Smart Distribution</div><div class="tick-item">🤖 Industrial Automation</div><div class="tick-item">☀️ Solar &amp; Energy Storage</div><div class="tick-item">🔒 AI Smart Security</div><div class="tick-item">💡 Smart Lighting</div><div class="tick-item">🍤 Cold Chain Seafood</div><div class="tick-item">🌏 Southeast Asia</div><div class="tick-item">📦 B2B Supply Chain</div></div></div>
+
+<section id="products" class="products-bg">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Core Products</span>
+      <h2 class="sec-title">What We Supply</h2>
+      <p class="sec-sub">Three product lines built for Southeast &amp; South Asian market demand.</p>
+    </div>
+    <div class="tabs">
+      <button class="tab active" onclick="filterProducts('all',this)">All Products</button>
+      <button class="tab" onclick="filterProducts('electrical',this)">⚡ Electrical &amp; Industrial</button>
+      <button class="tab" onclick="filterProducts('smarthome',this)">🏠 Smart Home</button>
+      <button class="tab" onclick="filterProducts('seafood',this)">🐟 Cold Chain</button>
+    </div>
+    <div class="product-grid" id="product-grid"></div>
+  </div>
+</section>
+
+<section id="markets" style="background:var(--navy)">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow eyebrow-light">Target Markets</span>
+      <h2 class="sec-title sec-title-light">Southeast &amp; South Asia</h2>
+      <p class="sec-sub sec-sub-light">9 high-growth markets with strong industrial and smart living demand.</p>
+    </div>
+    <div class="market-grid">
+      <div class="mcard"><div class="mcard-flag">🇹🇭</div><div class="mcard-name">Thailand</div><div class="mcard-type">Southeast Asia · Priority</div><div class="mcard-items"><span class="mitem">Industrial zones</span><span class="mitem">Smart home</span><span class="mitem">Energy</span></div></div>
+      <div class="mcard"><div class="mcard-flag">🇻🇳</div><div class="mcard-name">Vietnam</div><div class="mcard-type">Southeast Asia · Priority</div><div class="mcard-items"><span class="mitem">Manufacturing</span><span class="mitem">Automation</span><span class="mitem">B2B</span></div></div>
+      <div class="mcard"><div class="mcard-flag">🇮🇩</div><div class="mcard-name">Indonesia</div><div class="mcard-type">Southeast Asia</div><div class="mcard-items"><span class="mitem">Archipelago energy</span><span class="mitem">Retail</span></div></div>
+      <div class="mcard"><div class="mcard-flag">🇲🇾</div><div class="mcard-name">Malaysia</div><div class="mcard-type">Southeast Asia · Warehouse Hub</div><div class="mcard-items"><span class="mitem">Logistics hub</span><span class="mitem">E-commerce</span></div></div>
+      <div class="mcard"><div class="mcard-flag">🇵🇭</div><div class="mcard-name">Philippines</div><div class="mcard-type">Southeast Asia</div><div class="mcard-items"><span class="mitem">Islands power</span><span class="mitem">Smart home</span></div></div>
+      <div class="mcard"><div class="mcard-flag">🇮🇳</div><div class="mcard-name">India</div><div class="mcard-type">South Asia · High Growth</div><div class="mcard-items"><span class="mitem">Industrial</span><span class="mitem">Scale market</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="business">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Business Model</span>
+      <h2 class="sec-title">B2B + B2C Dual Strategy</h2>
+      <p class="sec-sub">Large stable orders from corporate clients, combined with consumer retail across major platforms.</p>
+    </div>
+    <div class="biz-grid">
+      <div class="biz-card biz-b2b">
+        <span class="biz-tag bt-b2b">B2B Core</span>
+        <div class="biz-title">Corporate &amp; Industrial Clients</div>
+        <p class="biz-desc">Long-term partnerships with distributors, engineering companies, and industrial buyers. Large orders, stable cash flow, recurring business.</p>
+        <ul class="biz-list"><li>Distributors &amp; trading companies</li><li>Engineering &amp; construction firms</li><li>Industrial procurement departments</li><li>E-commerce resellers</li><li>Hotel &amp; restaurant groups (seafood)</li></ul>
+      </div>
+      <div class="biz-card biz-b2c">
+        <span class="biz-tag bt-b2c">B2C Platform</span>
+        <div class="biz-title">Consumer Retail Channels</div>
+        <p class="biz-desc">Official flagship stores on major Southeast Asian platforms with short video, live commerce, and AI advertising.</p>
+        <ul class="biz-list"><li>Short video &amp; live streaming sales</li><li>KOL &amp; influencer partnerships</li><li>AI-targeted advertising</li><li>Official flagship store operations</li></ul>
+        <div class="biz-platforms"><span class="plat">🛒 Shopee</span><span class="plat">🛒 Lazada</span><span class="plat">🛒 Amazon</span><span class="plat">🎵 TikTok Shop</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="supply" style="background:var(--navy)">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow eyebrow-light">Supply Chain</span>
+      <h2 class="sec-title sec-title-light">China Manufacturing → Asia Delivery</h2>
+      <p class="sec-sub sec-sub-light">End-to-end supply chain from sourcing to overseas warehouse, covering standard and cold-chain logistics.</p>
+    </div>
+    <div class="supply-steps">
+      <div class="sstep"><div class="sstep-num">🏭</div><div class="sstep-title">China Sourcing</div><div class="sstep-desc">Quality manufacturers, competitive pricing, fast product updates</div></div>
+      <div class="sstep"><div class="sstep-num">🔍</div><div class="sstep-title">Quality Control</div><div class="sstep-desc">Inspection, international certifications, compliance checks</div></div>
+      <div class="sstep"><div class="sstep-num">✈️</div><div class="sstep-title">Logistics &amp; Customs</div><div class="sstep-desc">Air, sea freight, cold chain — fast customs clearance</div></div>
+      <div class="sstep"><div class="sstep-num">🏪</div><div class="sstep-title">Overseas Warehouse</div><div class="sstep-desc">Thailand, Vietnam, Malaysia, India local warehousing</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="brand-block">
+      <p class="brand-slogan">"Connecting <em>Smart Living</em><br>Across Asia"</p>
+      <div class="brand-taglines">
+        <div class="btag"><strong>智慧科技，连接亚洲</strong></div>
+        <div class="btag">·</div>
+        <div class="btag"><strong>Reliable Products, Smarter Future</strong></div>
+        <div class="btag">·</div>
+        <div class="btag"><strong>全球供应，智能未来</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="roadmap" style="background:#F8FAFC">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Development Plan</span>
+      <h2 class="sec-title">3-Year Growth Roadmap</h2>
+    </div>
+    <div class="roadmap">
+      <div class="rcard"><div class="rphase">Phase 1</div><div class="ryear">Year 1 — Foundation</div><ul class="rlist"><li>Launch official website</li><li>Open Shopee / Lazada flagship stores</li><li>Build supply chain partnerships</li><li>Start brand promotion</li><li>Establish B2B client base</li></ul></div>
+      <div class="rcard"><div class="rphase">Phase 2</div><div class="ryear">Year 2 — Expansion</div><ul class="rlist"><li>Set up overseas warehouses</li><li>Expand regional distributor network</li><li>Scale digital marketing</li><li>Grow brand awareness across Asia</li><li>Launch cold chain seafood B2B</li></ul></div>
+      <div class="rcard"><div class="rphase">Phase 3</div><div class="ryear">Year 3 — Leadership</div><ul class="rlist"><li>Own-brand product development</li><li>Smart home ecosystem platform</li><li>Regional supply chain centers</li><li>Become leading cross-border operator</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="background:var(--navy)">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <span class="eyebrow eyebrow-light" style="display:inline-block;margin-bottom:.75rem">Get in Touch</span>
+        <h2 style="font-family:'Syne',sans-serif;font-size:1.9rem;font-weight:800;color:#fff;margin-bottom:.75rem;letter-spacing:-.02em">Ready to start a partnership?</h2>
+        <p style="color:rgba(255,255,255,.6);font-size:15px;line-height:1.8;margin-bottom:2rem">Whether you are a distributor, importer, or platform seller looking for reliable products and supply chain support, we'd love to hear from you.</p>
+        <div class="ci-items">
+          <div class="ci-item"><div class="ci-icon">🌐</div><div><span class="ci-label">Website</span><span class="ci-val">xynong.ccwu.cc</span></div></div>
+          <div class="ci-item"><div class="ci-icon">📦</div><div><span class="ci-label">Business</span><span class="ci-val">B2B Wholesale · B2C Retail · Cold Chain</span></div></div>
+          <div class="ci-item"><div class="ci-icon">🌏</div><div><span class="ci-label">Markets</span><span class="ci-val">Southeast Asia &amp; South Asia</span></div></div>
+        </div>
+        <div class="social-row">
+          <a href="#" class="social-btn" title="TikTok">🎵</a>
+          <a href="#" class="social-btn" title="Facebook">📘</a>
+          <a href="#" class="social-btn" title="WhatsApp">💬</a>
+          <a href="#" class="social-btn" title="WeChat">💚</a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div class="form-row">
+          <div class="fg"><label>Your Name</label><input type="text" placeholder="Full name"></div>
+          <div class="fg"><label>Company</label><input type="text" placeholder="Company name"></div>
+        </div>
+        <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com"></div>
+        <div class="fg"><label>Inquiry Type</label><select><option value="">Select inquiry type...</option><option>Industrial / Electrical Equipment</option><option>Smart Home Products</option><option>Cold Chain Seafood Supply</option><option>Become a Distributor</option><option>Platform Store Partnership</option><option>Other</option></select></div>
+        <div class="fg"><label>Country / Market</label><input type="text" placeholder="e.g. Thailand, Vietnam, India..."></div>
+        <div class="fg"><label>Message</label><textarea placeholder="Tell us about your needs, quantities, or questions..."></textarea></div>
+        <button class="btn-submit" onclick="submitForm()">Send Inquiry →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo"><div class="logo-mark">TH</div><div class="logo-text">Tita-Harbor<span>.co26</span></div></a>
+        <p>Cross-border e-commerce &amp; supply chain specialist for Southeast and South Asia. Smart Technology · Reliable Supply · Better Living.</p>
+        <span class="footer-domain">🌐 xynong.ccwu.cc</span>
+      </div>
+      <div class="fc"><h4>Products</h4><a href="#products">Electrical Equipment</a><a href="#products">Industrial Automation</a><a href="#products">Smart Home</a><a href="#products">Cold Chain Seafood</a></div>
+      <div class="fc"><h4>Company</h4><a href="#markets">Target Markets</a><a href="#business">Business Model</a><a href="#supply">Supply Chain</a><a href="#roadmap">Roadmap</a></div>
+      <div class="fc"><h4>Contact</h4><a href="#contact">Send Inquiry</a><a href="#contact">B2B Partnership</a><a href="#contact">Distributor Program</a><a href="#contact">Platform Stores</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Tita-Harbor.co26 · xynong.ccwu.cc · All rights reserved.</span>
+      <span>Smart Technology · Reliable Supply · Better Living</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script>
+const allProducts=[
+  {cat:'electrical',icon:'⚡',bg:'img-blue',badge:'B2B',bc:'b-b2b',name:'Smart Distribution Cabinets',desc:'Low-voltage distribution panels, smart circuit breakers, power monitoring systems for factories and buildings.',tags:['B2B','Industrial','Energy']},
+  {cat:'electrical',icon:'🤖',bg:'img-cyan',badge:'B2B',bc:'b-b2b',name:'Industrial Automation',desc:'PLC controllers, frequency inverters, industrial sensors, smart motors and automation control systems.',tags:['PLC','Automation','Manufacturing']},
+  {cat:'electrical',icon:'☀️',bg:'img-gold',badge:'New',bc:'b-new',name:'Solar & Energy Storage',desc:'Solar inverters, energy storage batteries, solar controllers and portable power units for off-grid areas.',tags:['Solar','New Energy','Storage']},
+  {cat:'electrical',icon:'🌬️',bg:'img-green',badge:'B2B',bc:'b-b2b',name:'BLDC Energy-Saving Fans',desc:'Smart ceiling fans, industrial ventilation systems designed for tropical Southeast Asian climate.',tags:['Energy Saving','Climate','B2B']},
+  {cat:'smarthome',icon:'🔒',bg:'img-blue',badge:'B2C',bc:'b-b2c',name:'AI Smart Security',desc:'AI cameras, smart door locks, video doorbells, infrared alarms with mobile remote control and cloud monitoring.',tags:['AI','Security','Smart Home']},
+  {cat:'smarthome',icon:'💡',bg:'img-cyan',badge:'B2C',bc:'b-b2c',name:'Smart Lighting Systems',desc:'WiFi bulbs, RGB ambient lights, smart switches — voice & app controlled, energy saving.',tags:['WiFi','RGB','Voice Control']},
+  {cat:'smarthome',icon:'🍳',bg:'img-gold',badge:'B2C',bc:'b-b2c',name:'Smart Kitchen Appliances',desc:'Smart rice cookers, air fryers, smart kettles — AI menu, healthy cooking, energy efficient.',tags:['Kitchen','AI Menu','Health']},
+  {cat:'smarthome',icon:'🧹',bg:'img-green',badge:'New',bc:'b-new',name:'Smart Cleaning Robots',desc:'Robot vacuums, smart mops, UV sterilization — AI navigation, automatic scheduling.',tags:['Robot','AI Navigation','UV']},
+  {cat:'seafood',icon:'🦐',bg:'img-blue',badge:'B2B',bc:'b-b2b',name:'Frozen Shrimp Export',desc:'Premium frozen shrimp for hotel groups, seafood importers and chain restaurants. Full cold-chain logistics.',tags:['Cold Chain','B2B','Export']},
+  {cat:'seafood',icon:'🐟',bg:'img-cyan',badge:'B2B',bc:'b-b2b',name:'Salmon & Tuna Supply',desc:'Certified salmon, tuna and shellfish for hospitality, fresh food platforms and restaurant chains.',tags:['Certified','Restaurant','Hotel']},
+];
+const catLabel={electrical:'Electrical & Industrial',smarthome:'Smart Home',seafood:'Cold Chain Seafood'};
+function renderProducts(f){
+  const list=f==='all'?allProducts:allProducts.filter(p=>p.cat===f);
+  document.getElementById('product-grid').innerHTML=list.map(p=>`
+    <div class="pcard">
+      <div class="pcard-img ${p.bg}">${p.icon}<span class="pcard-badge ${p.bc}">${p.badge}</span></div>
+      <div class="pcard-body">
+        <div class="pcard-cat">${catLabel[p.cat]}</div>
+        <div class="pcard-name">${p.name}</div>
+        <div class="pcard-desc">${p.desc}</div>
+        <div class="pcard-tags">${p.tags.map(t=>`<span class="ptag">${t}</span>`).join('')}</div>
+      </div>
+    </div>`).join('');
+}
+function filterProducts(f,el){document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));el.classList.add('active');renderProducts(f);}
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),3000);}
+function submitForm(){showToast('✓ Inquiry sent! We will contact you within 24 hours.');}
+renderProducts('all');
+</script>
+</body>
+</html>
